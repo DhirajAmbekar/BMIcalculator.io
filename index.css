@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-bmi{
+    height: 600px;
+    width: 600px;
+    background-image: linear-gradient(red,black);
+    margin: auto;
+    margin-top: 10px;
+   position: relative;
+   border-radius: 2%;
+   overflow: hidden;
+   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.452),
+   0px 0px 20px rgba(255, 255, 255, 0.452),
+   0px 0px 60px rgba(255, 255, 255, 0.452);
+   margin-top:10px;
+}
+.fit{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+    width: 70%;
+    opacity: 0.5;
+}
+h1{
+    position: absolute;
+    top: 10px;
+    left:10%;
+    z-index: 2;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.781);
+}
+.inner-input{
+    height: fit-content;
+    padding: 30px 0px;
+    width: 300px;
+    margin:100px 0px 0px 10px;
+}
+.inner-max{
+    padding: 10px 0px;
+}
+.inner-input label{
+    font-size: 40px;
+    text-shadow: 2px 0px 1px white;
+}
+.inner-input input{
+    width: 250px;
+    height: 50px;
+    background-color:transparent;
+    font-size: 30px;
+    border-radius: 10%;
+    border: solid 1px;
+    padding-left: 10px;
+    color: white;
+    text-shadow: 0px 2px 1px black;
+}
+.inner-input input:hover{
+    box-shadow: 0px 5px 1px rgba(251, 255, 0, 0.555);
+}
+button{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    background-image: linear-gradient(rgb(242, 255, 0),rgb(251, 0, 0));
+    border: solid 1px;
+}
+button:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(red,yellow);
+    transition: all 1s;
+
+}
+.checkit{
+    height: 70px;
+    border: solid 1px white;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left:10%;
+    z-index: 2;
+    width: 80%;
+}
+.checkit p {
+    margin: auto;
+    color: white;
+}
+#under{
+    width: 100%;
+}
+@media screen and (max-width:425px) {
+        .main-bmi{
+            height: 100vh;
+            width: 100%;
+            margin-top: 0px;
+
+        }
+        .fit{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            height: 100%;
+            width: 100%;
+            opacity: 0.5;
+        }  
+        .inner-input{
+            position: absolute;
+            z-index: 10;
+        }  
+        button{
+            position: absolute;
+            bottom: 200px;
+        }
+        h1{
+            position: absolute;
+            top: 10px;
+            left:0;
+            z-index: 2;
+            text-align: center;
+
+        } 
+}
